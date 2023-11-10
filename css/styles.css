@@ -11401,3 +11401,10 @@ html {
   min-width: 290px;
   height: 290px;
 }
+@media (min-width: 1200px) {
+  .photo-presentation img {
+    border-radius: 100%;
+    min-width: 360px;
+    height: 360px;
+  }
+}
