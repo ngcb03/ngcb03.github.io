@@ -523,8 +523,14 @@ progress {
 }
 
 .lead {
-  font-size: 1.25rem;
-  font-weight: 300;
+  font-size: 1.1rem;
+  font-weight: 200;
+}
+@media (min-width: 1200px) {
+  .lead {
+    font-size: 1.25rem;
+    font-weight: 300;
+  }
 }
 
 .display-1 {
@@ -11392,6 +11398,6 @@ html {
 
 .photo-presentation img {
   border-radius: 100%;
-  min-width: 330px;
-  height: 330px;
+  min-width: 290px;
+  height: 290px;
 }
