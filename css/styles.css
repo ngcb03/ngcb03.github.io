@@ -636,9 +636,14 @@ progress {
   content: "— ";
 }
 
+.img-prev {
+  width: 100%;
+  height: 300px;
+}
+
 .img-fluid {
   max-width: 100%;
-  height: auto;
+  height: 500px;
 }
 
 .img-thumbnail {
@@ -6040,6 +6045,7 @@ fieldset:disabled .btn {
 .carousel-inner {
   position: relative;
   width: 100%;
+
   overflow: hidden;
 }
 .carousel-inner::after {
@@ -11246,8 +11252,8 @@ p.lead {
     padding: 0.5rem;
   }
   #sideNav .navbar-brand .img-profile {
-    max-width: 10rem;
-    max-height: 10rem;
+    max-width: 15rem;
+    max-height: 15rem;
     border: 0.5rem solid rgba(255, 255, 255, 0.2);
   }
   #sideNav .navbar-collapse {
@@ -11268,10 +11274,8 @@ p.lead {
     display: block;
   }
 }
+
 .social-icons .social-icon {
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
   height: 3.5rem;
   width: 3.5rem;
   background-color: #495057;
@@ -11280,11 +11284,46 @@ p.lead {
   font-size: 1.5rem;
   margin-right: 1.5rem;
 }
-.social-icons .social-icon:last-child {
+
+.social-icons .social-icon:hover{
+  background-color: #bd5d38;
+}
+
+.social-icons .social-icon-cv {
+  height: 3.5rem;
+  padding: 0 15px;
+  background-color: #bf613d;
+  color: #fff;
+  border-radius: 30px;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+.social-icons .social-icon-cv:hover{
+  background-color: #608a2b;;
+}
+
+.social-icons .social-icon, 
+.social-icons .social-icon-cv{
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  margin-right: 1.5rem;
+  font-size: 1.5rem;
+}
+.social-icons .social-icon:last-child,
+.social-icons .social-icon-cv:last-child {
   margin-right: 0;
 }
-.social-icons .social-icon:hover {
-  background-color: #bd5d38;
+
+@media (max-width: 768px) {
+  .social-icons .social-icon {
+    margin-right: 5px;
+  }
+
+  .social-icons .social-icon-cv {
+    font-size: 1.3rem;
+  }
 }
 
 .dev-icons {
@@ -11303,6 +11342,7 @@ section.resume-section {
 section.resume-section .resume-section-content {
   width: 100%;
 }
+
 
 @media (min-width: 768px) {
   section.resume-section {
@@ -11323,7 +11363,7 @@ section.resume-section .resume-section-content {
   padding-right: 1rem;
   padding-top: 5rem;
   padding-bottom: 3rem;
-  max-width: 75rem;
+  /* max-width: 75rem; */
 }
 .page-section .page-section-heading {
   font-size: 2.25rem;
@@ -11340,7 +11380,7 @@ section.resume-section .resume-section-content {
   cursor: pointer;
   position: relative;
   display: block;
-  max-width: 20rem;
+  /* max-width: 20rem; */
   border-radius: 0.5rem;
   overflow: hidden;
 }
